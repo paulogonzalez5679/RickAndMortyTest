@@ -1,0 +1,40 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  width: 100%;
+  background-color: var(--color-bg-1);
+
+  &__left {
+    width: 100%;
+
+    @media only screen and (max-width: 600px) {
+      width: 60%;
+    }
+  }
+
+  &__right {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+
+    .nav__item {
+      color: var(--color-white);
+      margin: 0 1rem;
+    }
+
+    @media only screen and (max-width: 900px) {
+      width: 100%;
+    }
+  }
+
+  &__item {
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+    color: var(--color-span);
+
+    &:hover {
+      color: var(--color-span);
+    }
+  }
+}
